@@ -1,13 +1,16 @@
 buildscript {
-    // Явно указываем версию Kotlin
-    ext.kotlin_version = '1.5.31' 
+    ext.kotlin_version = '1.5.31'
+    ext {
+        // Добавляем версии, которые ищет файл в папке app
+        roomVersion = '2.4.2'
+        coroutineVersion = '1.5.2'
+    }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
-        // Добавляем эту строку, чтобы проект "увидел" Kotlin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
