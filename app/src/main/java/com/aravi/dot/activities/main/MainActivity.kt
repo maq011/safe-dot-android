@@ -41,7 +41,7 @@ import com.aravi.dot.manager.DevLogger
 import com.aravi.dot.util.PermissionUtils
 import com.aravi.dot.util.Utils
 import com.google.android.material.snackbar.Snackbar
-import com.webianks.easy_feedback.EasyFeedback
+//import com.webianks.easy_feedback.EasyFeedback
 import logcat.logcat
 import me.aravi.commons.base.BaseActivity
 import org.koin.android.ext.android.inject
