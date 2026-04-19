@@ -7,8 +7,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } // Добавили JitPack
-        jcenter() // Вернули для старых библиотек
+        maven { url 'https://jitpack.io' }
+        maven { url "https://gradle.org" }
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
@@ -20,8 +21,9 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } // И здесь тоже
-        jcenter() 
+        maven { url 'https://jitpack.io' }
+        maven { url "https://gradle.org" } // Добавили зеркало
+        jcenter()
     }
 }
 
