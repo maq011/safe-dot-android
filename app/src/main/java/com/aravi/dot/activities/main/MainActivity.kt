@@ -123,17 +123,17 @@ class MainActivity : BaseActivity() {
         }
 
 
-        binding.bugReport.setOnClickListener {
-            if (doesHavePermissions(Manifest.permission.READ_PHONE_STATE)) {
-                EasyFeedback.Builder(this)
-                    .withEmail("contact.24ac@gmail.com")
-                    .withSystemInfo()
-                    .build()
-                    .start()
-            } else {
-                permission(Manifest.permission.READ_PHONE_STATE)
-            }
-        }
+//       binding.bugReport.setOnClickListener {
+//           if (doesHavePermissions(Manifest.permission.READ_PHONE_STATE)) {
+//               EasyFeedback.Builder(this)
+//                    .withEmail("contact.24ac@gmail.com")
+//                    .withSystemInfo()
+//                    .build()
+//                    .start()
+//            } else {
+//                permission(Manifest.permission.READ_PHONE_STATE)
+//            }
+//       }
 
         initData()
 
