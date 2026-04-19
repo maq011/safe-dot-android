@@ -1,13 +1,14 @@
 buildscript {
     ext.kotlin_version = '1.5.31'
     ext {
-        // Добавляем версии, которые ищет файл в папке app
         roomVersion = '2.4.2'
         coroutineVersion = '1.5.2'
     }
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // Добавили JitPack
+        jcenter() // Вернули для старых библиотек
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
@@ -19,6 +20,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // И здесь тоже
+        jcenter() 
     }
 }
 
